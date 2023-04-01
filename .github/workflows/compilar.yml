@@ -17,7 +17,7 @@ jobs:
       - name: Ejecutamos las pruebas
         run: dotnet test
       - name: Publicar un release
-        uses: elgohr/Github-Release-Action@master
+        uses: elgohr/Github-Release-Action@v4
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
